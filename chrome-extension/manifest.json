@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Solution Helper",
+  "version": "1.0",
+  "description": "Get solutions to LeetCode problems using Claude's API",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://api.anthropic.com/*"
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["js/content.js"],
+      "css": ["css/styles.css"]
+    }
+  ]
+}
