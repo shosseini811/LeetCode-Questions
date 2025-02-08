@@ -1,15 +1,16 @@
 # LeetCode Solution Helper Chrome Extension
 
-This Chrome extension helps you solve LeetCode problems by integrating with Claude's API to provide detailed solutions and explanations.
+This Chrome extension helps you solve LeetCode problems by automatically fetching solution code using Claude's API.
 
 ## Features
 
-- Adds a "Get Solution" button to LeetCode problem pages
-- Extracts problem information and sends it to Claude's API
-- Displays solutions in a clean, floating window
-- Saves your Claude API key securely
-- Handles errors gracefully
-- Shows loading states during API calls
+- Automatically extracts problem information from LeetCode pages:
+  - Problem description
+  - Starter code
+  - Difficulty level
+- Sends the problem to Claude's API
+- Returns clean, ready-to-use solution code in the console
+- Securely stores your Claude API key
 
 ## Installation
 
@@ -26,18 +27,17 @@ This Chrome extension helps you solve LeetCode problems by integrating with Clau
 
 ## Usage
 
-1. Visit any LeetCode problem page
-2. Click the "Get Solution" button that appears on the page
-3. Wait for the solution to be generated
-4. View the solution in the floating window
-5. Click the close button (×) to dismiss the solution window
+1. Navigate to any LeetCode problem page
+2. Open Chrome DevTools (F12 or right-click > Inspect)
+3. Go to the Console tab
+4. The extension will automatically fetch and display the solution code
 
 ## Notes
 
 - You need a valid Claude API key to use this extension
 - The extension only works on LeetCode problem pages
-- Solutions are generated using Claude's API and may vary in detail and approach
-- The floating solution window can be repositioned as needed
+- Solutions are generated using Claude's API and may vary in approach
+- Make sure to test the solution before submitting
 
 ## Privacy
 
